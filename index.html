@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zip Code Lookup</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>ZIP Code Lookup</h1>
+    <p>Enter a 5-digit US ZIP code to get location details.</p>
+  </header>
+
+  <main>
+    <section>
+      <form id="zipForm">
+        <label for="zipInput">ZIP Code:</label>
+        <input id="zipInput" type="text" maxlength="5" required>
+        <button type="submit">Search</button>
+      </form>
+
+      <p id="error" class="error"></p>
+
+      <article id="result" class="result hidden">
+        <h2>Location Information</h2>
+        <p><strong>City:</strong> <span id="city"></span></p>
+        <p><strong>State:</strong> <span id="state"></span></p>
+        <p><strong>Latitude:</strong> <span id="lat"></span></p>
+        <p><strong>Longitude:</strong> <span id="lng"></span></p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Assignment 6 – INFO 6150</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
